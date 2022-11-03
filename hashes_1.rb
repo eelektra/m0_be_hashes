@@ -1,5 +1,5 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,24 +7,25 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+#p zoo
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
-
+foods[:milk]=1
+p foods
 
 #-------------------
 # Part 2: Email
@@ -37,16 +38,24 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
-# Write code that prints your email hash to the terminal.
+email = {
+  sender: 1,
+  receivers: 3,
+  cc: 2,
+  subject: 1,
+  message: 1
+}
 
+# Write code that prints your email hash to the terminal.
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.values
 
 
 #-------------------
@@ -59,7 +68,7 @@ p zoo
 # Check out the following example of an array of Instagram posts:
 
 
-posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"]
+#posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"]
 
 
 # An Array of Hashes is probably more realistic. Hashes are a data type that's great
@@ -97,3 +106,28 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+work_folder = [
+  {
+    sender: 1,
+    receivers: 3,
+    cc: 2,
+    subject: 1,
+    message: 1
+  },
+  {
+    sender: 1,
+    receivers: 3,
+    cc: 2,
+    subject: 1,
+    message: 1
+  },
+  {
+    sender: 1,
+    receivers: 3,
+    cc: 2,
+    subject: 1,
+    message: 1
+  }
+]
+ p work_folder
